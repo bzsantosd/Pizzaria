@@ -12,10 +12,29 @@
     <title>Pizzaria da Beatriz</title>
 <body>
 <div class="container">
-    <h1>Bem-Vindos a Pizzaria Bella Vista</h1>
+    <h1>Bem-Vindos a Pizzaria Bella Vista!</h1>
  <div class="menu">
-    <button onclick="mostrarSecao('login')">
-        <i class="fa-solid fa-user"></i>Login do Usuario
+    <button onclick="mostrarSecao('cadastro')">
+        <i class="fa-solid fa-pizza-slice"></i> Cadastro
       </button>
+    </div>
+
+<!--Secao de cadastro-->
+   <div id="cadastro" class="hidden">
+    <h2"> Cadastrar Pizza</h2>
+    <div class="form group">
+        <label for="nome">Nome da Pizza:</label>
+        <input type="text" id="nome" placeholder="Digite o nome da pizza">
+   </div>
+   <div class="form group">
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" placeholder="Digite o preço da pizza">
+   </div>
+    <div class="form group">
+          <label for="descricao">Descrição:</label>
+          <input type="text" id="descricao" placeholder="Digite a descrição da pizza">
+    </div>
+    <button onclick="criarCadastro()">Confirmar</button>
+    </div>
 </body>
 </html>
